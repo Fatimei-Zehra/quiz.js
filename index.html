@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cs/style.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <div class="question-titel">
+        <h2></h2>
+      </div>
+      <div class="question-answers">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button>Submit</button>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      const quiz = new Quiz();
+
+     
+      submintButton.addEventListener("click", function () {
+        const result = quiz.checkResult();
+        if (result) successResult++;
+        else failResult++;
+
+        quiz.nextQuestion();
+      });
+    </script>
+  </body>
+</html>
